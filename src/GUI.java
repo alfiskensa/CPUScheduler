@@ -41,10 +41,10 @@ public class GUI
         table = new JTable(model);
         table.setFillsViewportHeight(true);
         tablePane = new JScrollPane(table);
-        tablePane.setBounds(25, 25, 450, 250);
+        tablePane.setBounds(25, 25, 950, 250);
         
         addBtn = new JButton("Add");
-        addBtn.setBounds(300, 280, 85, 25);
+        addBtn.setBounds(800, 280, 85, 25);
         addBtn.setFont(new Font("Segoe UI", Font.PLAIN, 11));
         addBtn.addActionListener(new ActionListener(){
             @Override
@@ -54,7 +54,7 @@ public class GUI
         });
         
         removeBtn = new JButton("Remove");
-        removeBtn.setBounds(390, 280, 85, 25);
+        removeBtn.setBounds(890, 280, 85, 25);
         removeBtn.setFont(new Font("Segoe UI", Font.PLAIN, 11));
         removeBtn.addActionListener(new ActionListener(){
             @Override
@@ -71,7 +71,7 @@ public class GUI
 //        chartPanel.setPreferredSize(new Dimension(700, 10));
         chartPanel.setBackground(Color.WHITE);
         chartPane = new JScrollPane(chartPanel);
-        chartPane.setBounds(25, 310, 450, 100);
+        chartPane.setBounds(25, 310, 950, 100);
         
         wtLabel = new JLabel("Average Waiting Time:");
         wtLabel.setBounds(25, 425, 180, 25);
@@ -166,7 +166,7 @@ public class GUI
         });
         
         mainPanel = new JPanel(null);
-        mainPanel.setPreferredSize(new Dimension(500, 500));
+        mainPanel.setPreferredSize(new Dimension(1000, 500));
         mainPanel.add(tablePane);
         mainPanel.add(addBtn);
         mainPanel.add(removeBtn);
